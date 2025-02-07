@@ -33,8 +33,6 @@ async def crawl_venues():
                 break
             else:
                 all_venues.extend(venues)
-            if page_num == 2:
-                break
         if all_venues:
             with open('venues.csv', mode='w', newline='') as file:
                 writer = csv.DictWriter(file, fieldnames=REQUIRED_KEYS)
