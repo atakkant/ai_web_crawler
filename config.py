@@ -1,3 +1,11 @@
-BASE_URL = "https://www.theknot.com/marketplace/wedding-reception-venues-atlanta-ga"
-CSS_SELECTOR = "[class^='info-container']"
-REQUIRED_KEYS = ["name", "location", "price", "capacity", "rating", "reviews", "description"]
+URLS = [
+    "https://github.com/kyegomez/swarms",
+    "https://github.com/Cinnamon/kotaemon",
+]
+
+TAGS = ["agent"]
+
+CSS_SELECTOR = "article"
+URL_CSS_SELECTOR = "a.Link.text-bold.wb-break-word"
+REQUIRED_KEYS_REPOS = ["name", "url", "description"]
+REQUIRED_KEYS_TAGS = ["tag", "url"]
